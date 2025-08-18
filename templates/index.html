@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="#">MinhaLoja</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="contato.html">
+  <button class="btn-contato">Fale Conosco</button>
+</a>
+</li>
+<li><a href="contato.html">
+  <button class="btn-contato">Fale Conosco</button>
+</a>
+</li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <form class="search-form" action="#" method="GET">
+        <input type="text" placeholder="Buscar..." name="q" />
+        <button type="submit">🔍</button>
+      </form>
+      <a href="#carrinho" class="cart-icon" title="Carrinho de Compras">
+        🛒 <span class="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #cce4ff;
+  }
+
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-form {
+    display: flex;
+  }
+
+  .search-form input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .search-form button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-form button:hover {
+    background-color: #003d80;
+  }
+
+  .cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+    .btn-contato {
+      background: linear-gradient(90deg, #28a745 0%, #34d058 100%);
+      color: white;
+      padding: 12px 28px 12px 20px;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(40,167,69,0.15);
+      transition: background 0.3s, transform 0.2s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-contato::before {
+      content: '\2709'; /* envelope icon */
+      font-size: 18px;
+      margin-right: 6px;
+      filter: drop-shadow(0 1px 1px #218838);
+    }
+
+    .btn-contato:hover {
+      background: linear-gradient(90deg, #218838 0%, #28a745 100%);
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(40,167,69,0.25);
+    }
+    .container {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .header-icons {
+      justify-content: center;
+      width: 100%;
+    }
+  
+  
+  
+</style>
+
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Camisas de Marcas</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+  .lista-camisetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .camiseta {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+  }
+  .camiseta img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .camiseta h3 {
+    margin: 10px 0 6px;
+  }
+  .camiseta p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  .camiseta button {
+    margin-top: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .camiseta button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<h1>Catálogo de Camisetas</h1>
+
+<div class="lista-camisetas">
+
+  <div class="camiseta">
+    <img src=" static\moletom_lacoste.jpg" alt="Camiseta Lacoste" />
+    <h3>Camiseta Lacoste</h3>
+    <p><strong>Marca:</strong> Adidas</p>
+    <p><strong>Tamanho:</strong> M</p>
+    <p><strong>Cor:</strong> Preto</p>
+    <p><strong>Preço:</strong> R$ 79,90</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="camiseta">
+    <img src="static\camisetanike.webp" alt="Camiseta Nike" />
+    <h3>Camiseta Nike</h3>
+    <p><strong>Marca:</strong> Nike</p>
+    <p><strong>Tamanho:</strong> G</p>
+    <p><strong>Cor:</strong> Branco</p>
+    <p><strong>Preço:</strong> R$ 89,90</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="camiseta">
+    <img src="static\camisetabrucelee.webp" alt="Camiseta Brucelee" />
+    <h3>Camiseta Brucelee</h3>
+    <p><strong>Marca:</strong> Puma</p>
+    <p><strong>Tamanho:</strong> GG</p>
+    <p><strong>Cor:</strong> Azul</p>
+    <p><strong>Preço:</strong> R$ 99,90</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="camiseta">
+    <img src="static\camiseta.webp" alt="Camiseta Azul Basica" />
+    <h3>Camiseta Azul Basica</h3>
+    <p><strong>Marca:</strong> Reebok</p>
+    <p><strong>Tamanho:</strong> P</p>
+    <p><strong>Cor:</strong> Vermelho</p>
+    <p><strong>Preço:</strong> R$ 69,90</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="camiseta">
+    <img src="static\camisa_oklay.webp" alt="Camiseta Oklay" />
+    <h3>Camiseta Oklay</h3>
+    <p><strong>Marca:</strong> Under Armour</p>
+    <p><strong>Tamanho:</strong> M</p>
+    <p><strong>Cor:</strong> Cinza</p>
+    <p><strong>Preço:</strong> R$ 129,90</p>
+    <button>Comprar</button>
+  </div>
+
+</div>
+
+</body>
+<style>
+body {
+    background-image: url('img/fundo.jpg');
+}
+</style>
+</html>

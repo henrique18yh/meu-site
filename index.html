@@ -10,14 +10,7 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#produtos">Produtos</a></li>
-        <li><a href="contato.html">
-  <button class="btn-contato">Fale Conosco</button>
-</a>
-</li>
-<li><a href="contato.html">
-  <button class="btn-contato">Fale Conosco</button>
-</a>
-</li>
+          <li><a href="/contato">Fale Conosco</a></li>
       </ul>
     </nav>
     <div class="header-icons">
@@ -31,7 +24,7 @@
     </div>
   </div>
 </header>
-
+  
 <style>
   * {
     box-sizing: border-box;
@@ -124,36 +117,20 @@
     text-decoration: none;
   }
 
-    .btn-contato {
-      background: linear-gradient(90deg, #28a745 0%, #34d058 100%);
-      color: white;
-      padding: 12px 28px 12px 20px;
-      font-size: 17px;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(40,167,69,0.15);
-      transition: background 0.3s, transform 0.2s;
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      letter-spacing: 0.5px;
-    }
+  .cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: #ff3b3b;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
 
-    .btn-contato::before {
-      content: '\2709'; /* envelope icon */
-      font-size: 18px;
-      margin-right: 6px;
-      filter: drop-shadow(0 1px 1px #218838);
-    }
-
-    .btn-contato:hover {
-      background: linear-gradient(90deg, #218838 0%, #28a745 100%);
-      transform: scale(1.05);
-      box-shadow: 0 4px 16px rgba(40,167,69,0.25);
-    }
+  /* Responsivo */
+  @media (max-width: 768px) {
     .container {
       flex-wrap: wrap;
       gap: 10px;
@@ -170,7 +147,39 @@
     }
   
   
-  
+    .btn-contato {
+      margin-top: 10px;
+      background: linear-gradient(90deg, #007bff 0%, #28a745 100%);
+      color: #fff;
+      padding: 10px 28px 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(40, 167, 69, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 1px;
+    }
+
+    .btn-contato::before {
+      content: '\2709'; /* envelope icon */
+      font-size: 18px;
+      margin-right: 8px;
+      transition: color 0.3s;
+    }
+
+    .btn-contato:hover {
+      transform: scale(1.07);
+      box-shadow: 0 4px 16px rgba(40, 167, 69, 0.25);
+      background: linear-gradient(90deg, #28a745 0%, #007bff 100%);
+    }
+  }
 </style>
 
     <meta charset="UTF-8" />
@@ -232,8 +241,8 @@
 <div class="lista-camisetas">
 
   <div class="camiseta">
-    <img src=" static\moletom_lacoste.jpg" alt="Camiseta Lacoste" />
-    <h3>Camiseta Lacoste</h3>
+    <img src=" static\moletom_lacoste.jpg" alt="Camiseta Básica" />
+    <h3>Camiseta Básica</h3>
     <p><strong>Marca:</strong> Adidas</p>
     <p><strong>Tamanho:</strong> M</p>
     <p><strong>Cor:</strong> Preto</p>
@@ -242,8 +251,8 @@
   </div>
 
   <div class="camiseta">
-    <img src="static\camisetanike.webp" alt="Camiseta Nike" />
-    <h3>Camiseta Nike</h3>
+    <img src="static\camisetanike.webp" alt="Camiseta Estampada" />
+    <h3>Camiseta Estampada</h3>
     <p><strong>Marca:</strong> Nike</p>
     <p><strong>Tamanho:</strong> G</p>
     <p><strong>Cor:</strong> Branco</p>
@@ -252,8 +261,8 @@
   </div>
 
   <div class="camiseta">
-    <img src="static\camisetabrucelee.webp" alt="Camiseta Brucelee" />
-    <h3>Camiseta Brucelee</h3>
+    <img src="static\camisetabrucelee.webp" alt="Camiseta Esportiva" />
+    <h3>Camiseta Esportiva</h3>
     <p><strong>Marca:</strong> Puma</p>
     <p><strong>Tamanho:</strong> GG</p>
     <p><strong>Cor:</strong> Azul</p>
@@ -262,8 +271,8 @@
   </div>
 
   <div class="camiseta">
-    <img src="static\camiseta.webp" alt="Camiseta Azul Basica" />
-    <h3>Camiseta Azul Basica</h3>
+    <img src="static\camiseta.webp" alt="Camiseta Casual" />
+    <h3>Camiseta Casual</h3>
     <p><strong>Marca:</strong> Reebok</p>
     <p><strong>Tamanho:</strong> P</p>
     <p><strong>Cor:</strong> Vermelho</p>
@@ -272,8 +281,8 @@
   </div>
 
   <div class="camiseta">
-    <img src="static\camisa_oklay.webp" alt="Camiseta Oklay" />
-    <h3>Camiseta Oklay</h3>
+    <img src="static\camisa_oklay.webp" alt="Camiseta Premium" />
+    <h3>Camiseta Premium</h3>
     <p><strong>Marca:</strong> Under Armour</p>
     <p><strong>Tamanho:</strong> M</p>
     <p><strong>Cor:</strong> Cinza</p>
